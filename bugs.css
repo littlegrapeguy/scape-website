@@ -1,0 +1,79 @@
+* {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 20px;
+  flex: 100%;
+}
+
+.card:nth-child(1) {
+  background-color: #ED4245;
+}
+
+.card:nth-child(2) {
+  background-color: #5569E4;
+}
+
+@media (min-width: 1000px) {
+  .card {
+    flex: 40%;
+  }
+}
+
+.text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 7em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+button > h2 {
+  font-size: 3em;
+}
+
+button:active {
+  transform: scale(0.9, 0.9);
+}
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+}
+
+a > h2 {
+  font-size: 3em;
+}
